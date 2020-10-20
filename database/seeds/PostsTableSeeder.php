@@ -14,7 +14,7 @@ class PostsTableSeeder extends Seeder {
     public function run(Faker $faker) {
         $users = User::all();
 
-        for ($i = 0; $i < 50; $i++) {
+        for ($i = 0; $i < 25; $i++) {
             $newPost = new Post; # Post anche senza parentesi
 
             $newPost->title = $faker->text(50);
